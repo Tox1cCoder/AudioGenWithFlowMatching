@@ -102,7 +102,7 @@ class TangoFluxLoader:
             pbar.update(1)
 
             log.info("Loading TangoFlux models")
-            
+
             del self.model
             self.model = None
 

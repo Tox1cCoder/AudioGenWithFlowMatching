@@ -13,7 +13,7 @@ async def play_audio(request):
 
     if filename is None:
         return web.Response(status=404)
-    
+
     if filename[0] == "/" or ".." in filename:
         return web.Response(status=403)
 
@@ -29,7 +29,10 @@ async def play_audio(request):
     subfolder = query.get("subfolder", None)
     if subfolder:
         full_output_dir = os.path.join(output_dir, subfolder)
-        if os.path.commonpath((os.path.abspath(full_output_dir), output_dir)) != output_dir:
+        if (
+            os.path.commonpath((os.path.abspath(full_output_dir), output_dir))
+            != output_dir
+        ):
             return web.Response(status=403)
         output_dir = full_output_dir
 
