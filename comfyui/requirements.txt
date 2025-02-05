@@ -1,9 +1,0 @@
-torchaudio
-torchlibrosa
-torchvision
-diffusers
-accelerate
-datasets
-librosa
-wandb
-tqdm
