@@ -7,14 +7,8 @@ TangoFlux consists of FluxTransformer blocks, which are Diffusion Transformers (
 # Installation
 
 ```bash
-pip install git+https://github.com/declare-lab/TangoFlux
+pip install git+https://github.com/Tox1cCoder/AudioGenWithFlowMatching
 ```
-
-## Inference
-
-TangoFlux can generate audio up to 30 seconds long.
-
-## Web Interface
 
 Run the following command to start the web interface:
 
